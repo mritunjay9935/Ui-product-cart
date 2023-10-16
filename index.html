@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Catalog</title>
+</head>
+<body>
+    <header>
+        <h1>Product Catalog</h1>
+        <div id="search-container">
+            <input type="text" id="search" placeholder="Search">
+        </div>
+        <div id="cart-container">
+            <div id="cart-icon" class="cart-icon">🛒</div>
+            <div id="cart-count" class="cart-count">0</div>
+        </div>
+    </header>
+    <main>
+        <aside id="filters">
+            <h2>Filters</h2>
+            <div class="filter-section">
+                <h3>Color</h3>
+                <div class="checkbox-options" id="color-filter">
+                    <label>
+                        <input type="checkbox" name="color" value="Red"> Red
+                    </label>
+                    <label>
+                        <input type="checkbox" name="color" value="Blue"> Blue
+                    </label>
+                    <label>
+                        <input type="checkbox" name="color" value="Green"> Green
+                    </label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Gender</h3>
+                <div class="checkbox-options" id="gender-filter">
+                    <label>
+                        <input type="checkbox" name="gender" value="Men"> Men
+                    </label>
+                    <label>
+                        <input type="checkbox" name="gender" value="Women"> Women
+                    </label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Price</h3>
+                <div class="checkbox-options" id="price-filter">
+                    <label>
+                        <input type="checkbox" name="price" value="0-250"> Rs 0 - Rs 250
+                    </label>
+                    <label>
+                        <input type="checkbox" name="price" value="251-450"> Rs 251 - Rs 450
+                    </label>
+                    <label>
+                        <input type="checkbox" name="price" value="451"> Rs 451 and above
+                    </label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Type</h3>
+                <div class="checkbox-options" id="type-filter">
+                    <label>
+                        <input type="checkbox" name="type" value="Polo"> Polo
+                    </label>
+                    <label>
+                        <input type="checkbox" name="type" value="Hoodie"> Hoodie
+                    </label>
+                    <label>
+                        <input type="checkbox" name="type" value="Basic"> Basic
+                    </label>
+                </div>
+            </div>
+        </aside>
+        <div id="product-list">
+            <!-- Product Cards will be dynamically added here -->
+        </div>
+    </main>
+    
+    <footer>
+        <!-- Footer content if needed -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

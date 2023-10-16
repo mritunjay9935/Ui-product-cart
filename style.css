@@ -1,0 +1,161 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Style the cart icon and count */
+#cart-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cart-count {
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+/* Style the main content */
+main {
+    display: flex;
+}
+
+aside#filters {
+    background-color: #fff;
+    padding: 2rem;
+    width: 20%;
+    border-right: 1px solid #ddd;
+}
+
+.checkbox-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checkbox-options label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-options input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#product-list {
+    max-width: 80%;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h2 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.product-card p {
+    margin: 0.5rem 0;
+}
+
+.product-card button.add-to-cart {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Style the shopping cart section */
+#cart {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 20%;
+    margin: 0 1rem;
+}
+
+#cart h2 {
+    font-size: 1.5rem;
+}
+
+#cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+#cart li {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+/* Footer styles if needed */
+footer {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
